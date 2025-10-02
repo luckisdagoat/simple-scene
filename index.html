@@ -229,7 +229,6 @@ height="500"
 </a-plane>
 
 <a-mixin
-assets
 id="sphericaltreeleaves"
 material =  "src: #sphericaltreeleaves-base;
 repeat: 8 8;
@@ -238,13 +237,13 @@ occlusion;
 ambientOcclusionTextureRepeat: 8 8;
 normalMap: #sphericaltreeleaves-normal;
 normalTextureRepeat: 8 8;"
-geometry="radius:1"
+geometry="radius:4"
 >
 </a-mixin>
 
 <a-mixin
-    id="conicaltreeleaves"
-        material = "src: #conicaltreeleaves-base;
+id="conicaltreeleaves"
+ material = "src: #conicaltreeleaves-base;
 repeat: 2 2;
 ambientOcclusionMap: #conicaltreeleaves-ambient-occlusion;
 ambientOcclusionTextureRepeat: 2 2;
@@ -262,13 +261,12 @@ ambientOcclusionMap: #treetrunk-ambient-occlusion;
 ambientOcclusionTextureRepeat: 3 5;
 normalMap: #treetrunk-normal;
 normalTextureRepeat: 3 5"
-geometry="radius:0.2; height:3"
+geometry="radius:2; height:3"
 >
 </a-mixin>
 <a-mixin
 id="treetrunk"
-material =
-"src: #treetrunk-base;
+material ="src: #treetrunk-base;
 repeat: 3 5;
 ambientOcclusionMap: #treetrunk-ambient-occlusion;
 ambientOcclusionTextureRepeat: 3 5;
