@@ -230,7 +230,7 @@ height="500"
 
 <a-mixin
 id="sphericaltreeleaves"
-material =  "src: #sphericaltreeleaves-base;
+material =  "src: #sphericaltreeleaves-normal;
 repeat: 8 8;
 ambientOcclusionMap: #sphericaltreeleaves-ambient-
 occlusion;
@@ -243,9 +243,11 @@ geometry="radius:4"
 
 <a-mixin
 id="conicaltreeleaves"
- material = "src: #conicaltreeleaves-base;
+material =
+"src: #conicaltreeleaves-base;
 repeat: 2 2;
-ambientOcclusionMap: #conicaltreeleaves-ambient-occlusion;
+ambientOcclusionMap: #conicaltreeleaves-ambient-
+occlusion;
 ambientOcclusionTextureRepeat: 2 2;
 normalMap: #conicaltreeleaves-normal;
 normalTextureRepeat: 2 2;"
@@ -253,17 +255,7 @@ geometry="radius-bottom:1; height:3"
 >
 </a-mixin>
 
-<a-mixin
-id="treetrunk"
-material = "src: #treetrunk-base;
-repeat: 3 5;
-ambientOcclusionMap: #treetrunk-ambient-occlusion;
-ambientOcclusionTextureRepeat: 3 5;
-normalMap: #treetrunk-normal;
-normalTextureRepeat: 3 5"
-geometry="radius:2; height:3"
->
-</a-mixin>
+
 <a-mixin
 id="treetrunk"
 material ="src: #treetrunk-base;
