@@ -215,6 +215,62 @@ src="assets\Bark_06_normal.jpg"
 >
 </a-assets>
 
+<a-plane
+material=
+"src: #grass-base;
+repeat: 500 500;
+ambientOcclusionMap: #grass-ambient-occlusion;
+ambientOcclusionTextureRepeat: 500 500;
+normalMap: #grass-normal;
+normalTextureRepeat: 500 500"
+position="0 0 0"
+rotation="-90 0 0"
+width="500"
+height="500"
+>
+</a-plane>
+
+<a-mixin
+id="sphericaltreeleaves"
+material =
+"src: #sphericaltreeleaves-base;
+repeat: 8 8;
+ambientOcclusionMap: #sphericaltreeleaves-ambient-
+occlusion;
+ambientOcclusionTextureRepeat: 8 8;
+normalMap: #sphericaltreeleaves-normal;
+normalTextureRepeat: 8 8;"
+geometry="radius:1"
+>
+</a-mixin>
+
+<a-mixin
+id="conicaltreeleaves"
+material =
+"src: #conicaltreeleaves-base;
+repeat: 2 2;
+ambientOcclusionMap: #conicaltreeleaves-ambient-
+occlusion;
+ambientOcclusionTextureRepeat: 2 2;
+normalMap: #conicaltreeleaves-normal;
+normalTextureRepeat: 2 2;"
+geometry="radius-bottom:1; height:3"
+>
+</a-mixin>
+
+<a-mixin
+id="treetrunk"
+material =
+"src: #treetrunk-base;
+repeat: 3 5;
+ambientOcclusionMap: #treetrunk-ambient-occlusion;
+ambientOcclusionTextureRepeat: 3 5;
+normalMap: #treetrunk-normal;
+normalTextureRepeat: 3 5"
+geometry="radius:0.2; height:3"
+>
+</a-mixin>
+
 
         </a-scene>
     </body>
