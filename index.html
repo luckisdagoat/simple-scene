@@ -195,8 +195,7 @@ src="assets\Stylized_Leaves_002_basecolor.jpg"
 >
 <img
 id="conicaltreeleaves-ambient-occlusion"
-src="assets\Stylized_Leaves_002_ambientOcclu
-sion.jpg"
+src="assets\Stylized_Leaves_002_ambientOcclusion.jpg"
 >
 <img
 id="conicaltreeleaves-normal"
@@ -267,6 +266,20 @@ normalTextureRepeat: 3 5"
 geometry="radius:0.2; height:3"
 >
 </a-mixin>
+a-mixin
+id="treetrunk"
+material =
+"src: #treetrunk-base;
+repeat: 3 5;
+ambientOcclusionMap: #treetrunk-ambient-occlusion;
+ambientOcclusionTextureRepeat: 3 5;
+normalMap: #treetrunk-normal;
+normalTextureRepeat: 3 5"
+geometry="radius:0.2; height:3"
+>
+</a-mixin>
+
+
 
     </a-scene>
 </body>
