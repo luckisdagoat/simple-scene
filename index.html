@@ -155,12 +155,8 @@ height="0.25"
 <a-mixin
 id="treetrunk"
 material = "treetrunk-material"
-src="#treetrunk-base;
+src="#Bark_06_basecolor"
 repeat: 3 5;
-ambientOcclusionMap: #treetrunk-ambient-occlusion;
-ambientOcclusionTextureRepeat: 3 5;
-normalMap: #treetrunk-normal;
-normalTextureRepeat: 3 5"
 geometry="radius:0.2; height:3"
 >
 </a-mixin>
@@ -291,6 +287,32 @@ src="assets\sky.jpg"
 src="#sky"
 >
 </a-sky>
+
+<a-asset-item
+id="chair"
+src="assets\chair.glb"
+>
+</a-asset-item>
+<a-asset-item
+id="lamp"
+src="assets\lamp.glb"
+>
+</a-asset-item>
+
+<a-entity
+gltf-model="#chair"
+position="-1.0 0 -10"
+rotation="0 45 0"
+scale="0.1 0.1 0.1"
+>
+</a-entity>
+
+<a-entity
+gltf-model="#lamp"
+position="1.0 0 -10"
+scale="0.225 0.225 0.225"
+>
+</a-entity>
 
 
         </a-scene>
