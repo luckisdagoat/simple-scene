@@ -155,7 +155,6 @@ height="0.25"
 <a-mixin
 id="treetrunk"
 material = "treetrunk-material"
-src="#Bark_06_basecolor"
 repeat: 3 5;
 geometry="radius:0.2; height:3"
 >
@@ -183,9 +182,7 @@ position="4 1 -2"
 
 <a-mixin
 id="conicaltreeleaves"
-color="Stylized_Leaves_001_ambientOcclusion"
-color="Stylized_Leaves_001_basecolor"
-color="Stylized_Leaves_001_normal"
+color="green"
 geometry="radius-bottom:1; height:3"
 >
 </a-mixin>
@@ -261,9 +258,9 @@ geometry="radius:1.2"
             ambientOcclusionTextureRepeat: 2 2;
             normalMap: #conicaltreeleaves-normal;
             normalTextureRepeat: 2 2;"
-geometry="radius-bottom:1; height:3"
->
-</a-mixin>
+            geometry="radius-bottom:1; height:3"
+            >
+            </a-mixin>
 
 <a-mixin
 id="treetrunk"
