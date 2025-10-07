@@ -68,10 +68,7 @@ src="assets\Bark_06_normal.jpg"
         height="500"
         >
         </a-plane>
-        <a-sky
-        color="lightskyblue"
-        >
-        </a-sky>
+        
 
 
         <a-mixin
@@ -221,12 +218,13 @@ position="8 2 -6"
 
 <a-plane
 material=
-"src: #grass-base;
+"src: #grass-ambient-occlusion.jpg"; 
 repeat: 500 500;
 ambientOcclusionMap: #grass-ambient-occlusion;
 ambientOcclusionTextureRepeat: 500 500;
 normalMap: #grass-normal;
-normalTextureRepeat: 500 500"
+normalTextureRepeat: 500 500;"
+color="forestgreen"
 position="0 0 0"
 rotation="-90 0 0"
 width="500"
@@ -284,31 +282,7 @@ src="#sky"
 >
 </a-sky>
 
-<a-asset-item
-id="chair"
-src="assets\chair.glb"
->
-</a-asset-item>
-<a-asset-item
-id="lamp"
-src="assets\lamp.glb"
->
-</a-asset-item>
 
-<a-entity
-gltf-model="#chair"
-position="-1.0 0 -10"
-rotation="0 45 0"
-scale="0.1 0.1 0.1"
->
-</a-entity>
-
-<a-entity
-gltf-model="#lamp"
-position="1.0 0 -10"
-scale="0.225 0.225 0.225"
->
-</a-entity>
 
 
         </a-scene>
