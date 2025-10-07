@@ -155,8 +155,12 @@ height="0.25"
 <a-mixin
 id="treetrunk"
 material = "treetrunk-material"
-src="treetrunk-base"
-color="treetrunk-normal"
+src="#treetrunk-base;
+repeat: 3 5;
+ambientOcclusionMap: #treetrunk-ambient-occlusion;
+ambientOcclusionTextureRepeat: 3 5;
+normalMap: #treetrunk-normal;
+normalTextureRepeat: 3 5"
 geometry="radius:0.2; height:3"
 >
 </a-mixin>
